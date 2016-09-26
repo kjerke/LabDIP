@@ -21,7 +21,12 @@ import javax.swing.JOptionPane;
  */
 public class Startup {
     public static void main(String[] args) {
+        TipCalculator calc =
+                new FoodServiceTipCalculator(ServiceQuality.GOOD, 100);
+        TipCalculatorManager mgr = new TipCalculatorManager(calc);
         
+        double tip = mgr.getTip();
+        System.out.println(tip);
         
     }
 
