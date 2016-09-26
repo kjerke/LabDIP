@@ -5,10 +5,17 @@
  */
 package dip.lab3.student.solution1;
 
+import java.util.Scanner;
+
 /**
  *
  * @author kevinjerke
  */
-public class MessageReader {
-    
+public class MessageReader implements Input {
+   public String readln(){
+       System.out.println("Enter message");
+       
+       Scanner keyboard = new Scanner(System.in);
+       return keyboard.nextLine();
+   }
 }

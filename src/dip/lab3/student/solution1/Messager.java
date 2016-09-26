@@ -10,5 +10,17 @@ package dip.lab3.student.solution1;
  * @author kevinjerke
  */
 public class Messager {
+     private Input input;
+    private Output output;
     
+    public Messager(Input reader, Output writer){
+        this.input = reader;
+        this.output = writer;
+    }
+    
+    public void message(){
+        String line = input.readln();
+        output.writeln(line);
+        output.writeln(input.readln());
+    }
 }

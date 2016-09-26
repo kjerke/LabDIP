@@ -9,6 +9,6 @@ package dip.lab3.student.solution1;
  *
  * @author kevinjerke
  */
-public interface Input {
-    public abstract String readln();
+public class ScreenReader {
+    
 }

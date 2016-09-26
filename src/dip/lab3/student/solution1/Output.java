@@ -5,10 +5,14 @@
  */
 package dip.lab3.student.solution1;
 
+import javax.swing.JOptionPane;
+
 /**
  *
  * @author kevinjerke
  */
-public class Output {
+public interface Output {
+    public abstract void writeln(String line);
     
+
 }

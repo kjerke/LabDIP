@@ -9,6 +9,14 @@ package dip.lab3.student.solution1;
  *
  * @author kevinjerke
  */
-public class ArrayInput {
+public class ArrayInput implements Input {
+   public static String readln(String line) {
+       line = "Test";
+       return line;
+   }
+   @Override
+   public String readln() {
+       return readln();
+   }
     
 }

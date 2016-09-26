@@ -9,6 +9,6 @@ package dip.lab3.student.solution1;
  *
  * @author kevinjerke
  */
-public class FileWriter {
-    
+public abstract class FileWriter implements Output {
+    public abstract String FileWriter();
 }

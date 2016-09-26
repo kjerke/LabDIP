@@ -10,5 +10,12 @@ package dip.lab3.student.solution1;
  * @author kevinjerke
  */
 public class Start {
-    
+    public static void main(String[] args) {
+        Input input = new MessageReader();
+        Output output = new ConsoleWriter();
+        
+        Messager message1 = new Messager(input, output);
+        
+        message1.message();
+    }
 }
