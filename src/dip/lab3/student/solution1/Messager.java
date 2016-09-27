@@ -18,9 +18,7 @@ public class Messager {
         this.output = writer;
     }
     
-    public void message(){
-        String line = input.readln();
-        output.writeln(line);
+    public void produceMessage(){
         output.writeln(input.readln());
     }
 }

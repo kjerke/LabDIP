@@ -16,6 +16,6 @@ public class Start {
         
         Messager message1 = new Messager(input, output);
         
-        message1.message();
+        message1.produceMessage();
     }
 }
